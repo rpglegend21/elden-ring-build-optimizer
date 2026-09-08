@@ -150,6 +150,7 @@ with st.sidebar:
         rank_mode = st.radio(
             "Rank by",
             ["Hits to kill (with status)", "Effective damage / hit"],
+            index=1,
             help="Hits-to-kill simulates the whole fight, folding in bleed & "
                  "frost procs — that's where blood/cold weapons overtake the "
                  "highest-damage pick. Effective damage ranks by a single hit.")
