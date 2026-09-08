@@ -219,6 +219,14 @@ with left:
                             f'needs <b>{dk.hits} hits</b> — {dk.hits - k.hits} more. '
                             f'The paper "best" loses the race.</span>',
                             unsafe_allow_html=True)
+                        st.markdown(
+                            '<span class="muted">Why? Bleed and frost never '
+                            'appear in the damage number &mdash; bleed tears off '
+                            'a share of the enemy&rsquo;s max HP, frost strips '
+                            'its absorption &mdash; so a lower-hitting weapon can '
+                            'end the fight in fewer swings than the '
+                            'highest-damage pick.</span>',
+                            unsafe_allow_html=True)
             else:
                 lost, pct = ar_lost(top.result, profile)
                 kill = f'; ~{k.hits} hits to kill' if k.hits else ''
